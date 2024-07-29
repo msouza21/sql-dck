@@ -1,4 +1,4 @@
-# pg-dck
+# SQL-DCK
 This are a mini project of SQL (Postgres) with embase domain in language and the logical use, considering data modeling, normalization/denormalization, data control and etc.
 
 With objetive of use almost all of the core SQL like:
