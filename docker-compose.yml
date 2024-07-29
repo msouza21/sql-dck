@@ -1,0 +1,18 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: pg-dck
+    environment:
+      POSTGRES_DB: pgteste
+      POSTGRES_USER: pguser
+      POSTGRES_PASSWORD: pgteste20
+    ports:
+      - "5450:5432"
+    volumes:
+      - ./pgdata:/pgdata
+    networks:
+      - pg-net
+
+networks:
+  pg-net:
+    driver: bridge
